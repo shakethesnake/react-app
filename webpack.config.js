@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/js/app.js',
     mode: 'development',
     module: {
         rules: [
@@ -49,5 +49,9 @@ module.exports = {
         contentBase: path.resolve(__dirname, '/'),//'./dist'
         hot: true,
         publicPath: '/'
+    },
+    devtool: 'inline-source-map',
+    optimization: {
+        minimize: false
     }
 };

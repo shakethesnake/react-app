@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from './Header.js';
+//import PrimarySearchAppBar from './material/navigation';
+import Utils from './utils';
+import Header from './legacy/Header';
+
 
 class App extends React.Component {
     constructor(props) {
@@ -12,7 +15,7 @@ class App extends React.Component {
         return (
             <div>
                 <Header/>
-                <h1>Hi bitches 1</h1>
+                {/* <PrimarySearchAppBar/> */}
             </div>
             
         )
